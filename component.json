@@ -9,9 +9,6 @@
   "scripts": [
     "index.js"
   ],
-  "templates": [
-    "cookie.jade"
-  ],
   "styles": [
     "style.less"
   ]
