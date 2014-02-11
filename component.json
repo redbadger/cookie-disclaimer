@@ -1,0 +1,18 @@
+{
+  "name": "cookie-disclaimer",
+  "description": "Cookie disclaimer component",
+  "version": "0.0.1",
+  "dependencies": {
+    "component/dom": "*",
+    "nbubna/store": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "templates": [
+    "cookie.jade"
+  ],
+  "styles": [
+    "style.less"
+  ]
+}
