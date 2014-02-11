@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <link href="../build/build.css" type="style/css" rel="stylesheet" />
+    <script src="../build/build.js" type="text/javascript"></script>
+    <style>
+      .main-container {
+        background-color: #eee;
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        height: 300px;
+      }
+
+    </style>
+    
+    <div class="main-container">
+      <h1>My page</h1>
+      <p>My text</p>
+    </div>
+
+    <script>
+      var content = '<p>In order to comply with new legislation, we have introduced a new cookie policy. It explains what cookies are, how we use them, how to disable them and any third party cookies that are in use on our website. It can be accessed by viewing our cookie policy.</p><p>By clicking close on this message, you consent to our use of cookies on this device in accordance with our cookie policy.</p>';
+
+      var disclaimer = require('cookie-disclaimer');
+      disclaimer('body', content);
+    </script>
+  </body>
+</html>
