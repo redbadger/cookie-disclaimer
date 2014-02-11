@@ -18,7 +18,7 @@ module.exports = function(target, content) {
     container.appendChild(customContent);
 
     var actions = document.createElement('div');
-    actions.class = 'actions';
+    actions.className = 'actions';
     var button = document.createElement('button');
     button.id = 'close-disclaimer';
     button.innerText = 'Close';
@@ -28,9 +28,9 @@ module.exports = function(target, content) {
 
     d.prepend(container);
 
-    var button = dom('#close-disclaimer')[0];
+    var button = document.getElementById('close-disclaimer');
     button.onclick = function(e) {
-      var disclaimer = dom('#cookie-disclaimer')[0];
+      var disclaimer = document.getElementById('cookie-disclaimer');
       var height = disclaimer.offsetHeight;
       var newValue = "-" + height + "px";
       disclaimer.style.marginBottom = newValue;
