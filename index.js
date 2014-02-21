@@ -21,7 +21,7 @@ module.exports = function(target, content) {
     actions.className = 'actions';
     var button = document.createElement('button');
     button.id = 'close-disclaimer';
-    button.innerText = 'Close';
+    button.innerHTML = 'Close';
     actions.appendChild(button);
 
     container.appendChild(actions);
